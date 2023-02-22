@@ -10,7 +10,7 @@ public class IngredientTypeTest {
     public IngredientTypeTest(String ingredientType) {
         this.ingredientType = ingredientType;
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "ingredient type: {0} {1}")
     public static Object[][] getIngredientTypeParamTest(){
         return new Object[][] {
                 {"FILLING"},
